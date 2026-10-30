@@ -26,10 +26,7 @@ A skill's command is `/abilities:<skill>`, for example `/abilities:unslop`. The 
 | `/abilities:grilling` | Asks you questions in rounds until all design decisions are settled. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling) |
 | `/abilities:prototype` | Builds a throwaway prototype to answer one design question. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/prototype) |
 | `/abilities:research` | Sends a background agent to read primary sources and write cited notes. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/research) |
-| `/abilities:setup-matt-pocock-skills` | Sets where a repo keeps its specs and tickets. Run it once in each repo before `to-spec` and `to-tickets`. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/setup-matt-pocock-skills) |
 | `/abilities:teach` | Teaches you a subject over many sessions, with HTML lessons. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/teach) |
-| `/abilities:to-spec` | Writes a spec from the conversation, for your review before the build. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/to-spec) |
-| `/abilities:to-tickets` | Splits a spec into small tickets and waits for your approval of the list. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/to-tickets) |
 | `/abilities:wayfinder` | Plans work that is too large for one session as a map of decision tickets. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/wayfinder) |
 
 ### Building
@@ -38,8 +35,6 @@ A skill's command is `/abilities:<skill>`, for example `/abilities:unslop`. The 
 | --- | --- | :-: | --- |
 | `/abilities:code-review` | Reviews the changes since a commit or branch against the repo standards and the spec. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review) |
 | `/abilities:codebase-design` | Gives the terms and rules to design deep modules with small interfaces. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/codebase-design) |
-| `/abilities:implement-spec` | Builds the tickets from `to-tickets` with parallel subagents on one integration branch. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/implement-spec) |
-| `/abilities:improve-codebase-architecture` | Finds modules to make deeper, shows them in an HTML report, and grills you on one. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/improve-codebase-architecture) |
 | `/abilities:tdd` | Builds a feature or a fix test first, one test at a time. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/tdd) |
 
 ### Writing
@@ -60,20 +55,13 @@ A skill's command is `/abilities:<skill>`, for example `/abilities:unslop`. The 
 
 | Skill | Description | Claude starts it | Source |
 | --- | --- | :-: | --- |
-| `/abilities:principle-attack-the-premise` | After two failed fixes, tests the belief that the fixes share. | X | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/principle-attack-the-premise) |
-| `/abilities:principle-build-the-lever` | Writes a script or tool for the work instead of edits by hand. | X | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/principle-build-the-lever) |
-| `/abilities:principle-fix-root-causes` | Fixes the first wrong step, not the place where the symptom shows. | X | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/principle-fix-root-causes) |
 | `/abilities:principle-laziness-protocol` | Makes the smallest change, with one source of truth. | X | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/principle-laziness-protocol) |
-| `/abilities:principle-redesign-from-first-principles` | Changes the design as if the new need was there from the start. | X | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/principle-redesign-from-first-principles) |
-| `/abilities:principle-subtract-before-you-add` | Removes dead code and extra checks before it adds code. | X | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/principle-subtract-before-you-add) |
-| `/abilities:principle-test-behavior-not-implementation` | Keeps only tests that fail when the behavior breaks. | X | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/principle-test-behavior-not-implementation) |
 
 ### Sessions
 
 | Skill | Description | Claude starts it | Source |
 | --- | --- | :-: | --- |
 | `/abilities:handoff` | Writes a summary of the session for the next session. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/handoff) |
-| `/abilities:retro` | Lists changes to rules and checks after a session. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/retro) |
 
 ## Add a skill (for the repo owner)
 
