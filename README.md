@@ -31,7 +31,9 @@ A skill's command is `/abilities:<skill>`, for example `/abilities:unslop`. The 
 
 | Skill | Description | Claude starts it | Source |
 | --- | --- | :-: | --- |
+| `/abilities:blast-radius` | Finds what a change can break outside its diff, and proves the main safety fact with a run. | X | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/blast-radius) |
 | `/abilities:code-review` | Reviews the changes since a commit or branch against the repo standards and the spec. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review) |
+| `/abilities:interrogate` | Sends adversaries to break a change or a design, and keeps only the findings that a run proves. |  | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/interrogate) |
 | `/abilities:tdd` | Builds a feature or a fix test first, one test at a time. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/tdd) |
 
 ### Writing
