@@ -25,7 +25,6 @@ A skill's command is `/abilities:<skill>`, for example `/abilities:unslop`. The 
 | `/abilities:grill-me` | Starts grilling on your plan or design. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me) |
 | `/abilities:grilling` | Asks you questions in rounds until all design decisions are settled. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling) |
 | `/abilities:prototype` | Builds a throwaway prototype to answer one design question. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/prototype) |
-| `/abilities:research` | Sends a background agent to read primary sources and write cited notes. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/research) |
 | `/abilities:teach` | Teaches you a subject over many sessions, with HTML lessons. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/teach) |
 | `/abilities:wayfinder` | Plans work that is too large for one session as a map of decision tickets. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/wayfinder) |
 
@@ -34,7 +33,6 @@ A skill's command is `/abilities:<skill>`, for example `/abilities:unslop`. The 
 | Skill | Description | Claude starts it | Source |
 | --- | --- | :-: | --- |
 | `/abilities:code-review` | Reviews the changes since a commit or branch against the repo standards and the spec. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review) |
-| `/abilities:codebase-design` | Gives the terms and rules to design deep modules with small interfaces. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/codebase-design) |
 | `/abilities:tdd` | Builds a feature or a fix test first, one test at a time. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/tdd) |
 
 ### Writing
