@@ -39,6 +39,28 @@ Write the comment itself in a direct style:
 - Keep it concise and avoid filler, canned thanks, or status narration.
 - Distinguish verified facts from judgment.
 
+If the comment reports a review finding, put a severity label on its own line
+after the note. Start the comment text in the next paragraph:
+
+```md
+> [!NOTE]
+> 🤖 **<model> responding on behalf of <user>**
+
+⚠️ **[SHOULD FIX]**
+
+Actual comment starts here.
+```
+
+| Severity | Label |
+| --- | --- |
+| Must change before merge | `🛑 **[BLOCKING]**` |
+| Change before merge, unless the author gives a reason | `⚠️ **[SHOULD FIX]**` |
+| Optional | `💡 **[NIT]**` |
+
+If one review body holds several findings, give each finding its own label
+line. Leave the label off questions, replies, and other comments that are not
+findings.
+
 Preview the final Markdown before posting so quoting and blank lines render as
 shown. After posting, verify that GitHub returned the comment or review URL.
 Resolve a review thread only after its response was posted successfully.
