@@ -81,6 +81,15 @@
     "license": "plugins/abilities/licenses/mattpocock-skills.txt"
   },
   {
+    "name": "technical-writing",
+    "category": "writing",
+    "repo": "cursor/plugins",
+    "path": "pstack/skills/technical-writing",
+    "ref": "main",
+    "commit": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe",
+    "license": "plugins/abilities/licenses/cursor-plugins.txt"
+  },
+  {
     "name": "unslop",
     "category": "writing",
     "repo": "cursor/plugins",
