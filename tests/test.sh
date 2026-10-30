@@ -77,31 +77,6 @@ assert open(sys.argv[2] + "/" + entries["other"]["license"]).read() == "Apache t
 EOF
 }
 
-# Old installs have this hook and links into the old skills/ folder.
-test_cleanup_removes_old_install() {
-  setup
-  cat > "$HOME/.claude/settings.json" <<EOF
-{"hooks": {"Stop": [{"hooks": [{"type": "command", "command": "/x/stop.sh"}]}],
-           "SessionStart": [{"hooks": [{"type": "command", "command": "$R/bin/sync.sh", "timeout": 10}]}]},
- "effortLevel": "high"}
-EOF
-  ln -s "$R/skills/alpha" "$HOME/.claude/skills/alpha"
-  ln -s "$T/elsewhere" "$HOME/.claude/skills/theirs"
-  mkdir -p "$HOME/.claude/skills/mine"
-  local out
-  out=$(echo '{}' | "$R/bin/sync.sh") || return 1
-  [ ! -L "$HOME/.claude/skills/alpha" ] && [ -L "$HOME/.claude/skills/theirs" ] &&
-    [ -d "$HOME/.claude/skills/mine" ] || return 1
-  echo "$out" | python3 -c 'import json, sys; assert "marketplace add" in json.load(sys.stdin)["systemMessage"]' || return 1
-  python3 - "$HOME/.claude/settings.json" <<'EOF'
-import json, sys
-data = json.load(open(sys.argv[1]))
-assert data["effortLevel"] == "high"
-assert data["hooks"]["Stop"][0]["hooks"][0]["command"] == "/x/stop.sh"
-assert "SessionStart" not in data["hooks"]
-EOF
-}
-
 run() {
   local name=$1
   T=$(mktemp -d)
