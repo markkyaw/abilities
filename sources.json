@@ -1,5 +1,14 @@
 [
   {
+    "name": "blast-radius",
+    "category": "building",
+    "repo": "cursor/plugins",
+    "path": "pstack/skills/blast-radius",
+    "ref": "main",
+    "commit": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe",
+    "license": "plugins/abilities/licenses/cursor-plugins.txt"
+  },
+  {
     "name": "code-review",
     "category": "building",
     "repo": "mattpocock/skills",
@@ -34,6 +43,15 @@
     "ref": "main",
     "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
     "license": "plugins/abilities/licenses/mattpocock-skills.txt"
+  },
+  {
+    "name": "interrogate",
+    "category": "building",
+    "repo": "cursor/plugins",
+    "path": "pstack/skills/interrogate",
+    "ref": "main",
+    "commit": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe",
+    "license": "plugins/abilities/licenses/cursor-plugins.txt"
   },
   {
     "name": "leaving-pr-comments",
