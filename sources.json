@@ -36,6 +36,15 @@
     "license": "plugins/abilities/licenses/mattpocock-skills.txt"
   },
   {
+    "name": "leaving-pr-comments",
+    "category": "writing",
+    "repo": "t3dotgg/tstack",
+    "path": "skills/leaving-pr-comments",
+    "ref": "main",
+    "commit": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+    "license": "plugins/abilities/licenses/t3dotgg-tstack.txt"
+  },
+  {
     "name": "principle-laziness-protocol",
     "category": "principles",
     "repo": "cursor/plugins",
