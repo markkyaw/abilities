@@ -40,7 +40,6 @@ A skill's command is `/abilities:<skill>`, for example `/abilities:unslop`. The 
 | --- | --- | :-: | --- |
 | `/abilities:leaving-pr-comments` | Adds an attribution note to each GitHub comment that an agent writes, and sets rules for the comment text. | X | [t3dotgg/tstack](https://github.com/t3dotgg/tstack/tree/main/skills/leaving-pr-comments) |
 | `/abilities:unslop` | Removes AI writing patterns from text. | X | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/unslop) |
-| `/abilities:wait-what` | Says the last reply again in plain STE, with more context. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/wait-what) |
 | `/abilities:writing-for-agents` | Gives rules for writing skills, CLAUDE.md, and AGENTS.md. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/writing-for-agents) |
 
 ### Debugging
