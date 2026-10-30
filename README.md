@@ -65,8 +65,6 @@ bin/add-skill.sh planning https://github.com/mattpocock/skills/tree/main/skills/
 
 The script copies the folder to `plugins/abilities/skills/<name>/`, copies the source license to `plugins/abilities/licenses/`, and records the source and the category in `sources.json`. Read the files, and add the skill to its category table above. Then commit and push.
 
-Run the tests with `bash tests/test.sh`.
-
 ## Licenses
 
 Each copied skill keeps the license of its source. The license texts are in `plugins/abilities/licenses/`.
