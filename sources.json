@@ -27,28 +27,10 @@
     "license": "plugins/abilities/licenses/mattpocock-skills.txt"
   },
   {
-    "name": "grill-me",
-    "category": "planning",
-    "repo": "mattpocock/skills",
-    "path": "skills/productivity/grill-me",
-    "ref": "main",
-    "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
-    "license": "plugins/abilities/licenses/mattpocock-skills.txt"
-  },
-  {
     "name": "grilling",
     "category": "planning",
     "repo": "mattpocock/skills",
     "path": "skills/productivity/grilling",
-    "ref": "main",
-    "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
-    "license": "plugins/abilities/licenses/mattpocock-skills.txt"
-  },
-  {
-    "name": "handoff",
-    "category": "sessions",
-    "repo": "mattpocock/skills",
-    "path": "skills/productivity/handoff",
     "ref": "main",
     "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
     "license": "plugins/abilities/licenses/mattpocock-skills.txt"

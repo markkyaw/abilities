@@ -22,7 +22,6 @@ A skill's command is `/abilities:<skill>`, for example `/abilities:unslop`. The 
 | Skill | Description | Claude starts it | Source |
 | --- | --- | :-: | --- |
 | `/abilities:domain-modeling` | Sharpens the project terms and records them in GLOSSARY.md and decision records. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling) |
-| `/abilities:grill-me` | Starts grilling on your plan or design. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me) |
 | `/abilities:grilling` | Asks you questions in rounds until all design decisions are settled. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling) |
 | `/abilities:prototype` | Builds a throwaway prototype to answer one design question. | X | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/engineering/prototype) |
 | `/abilities:teach` | Teaches you a subject over many sessions, with HTML lessons. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/teach) |
@@ -54,12 +53,6 @@ A skill's command is `/abilities:<skill>`, for example `/abilities:unslop`. The 
 | Skill | Description | Claude starts it | Source |
 | --- | --- | :-: | --- |
 | `/abilities:principle-laziness-protocol` | Makes the smallest change, with one source of truth. | X | [cursor/plugins (pstack)](https://github.com/cursor/plugins/tree/main/pstack/skills/principle-laziness-protocol) |
-
-### Sessions
-
-| Skill | Description | Claude starts it | Source |
-| --- | --- | :-: | --- |
-| `/abilities:handoff` | Writes a summary of the session for the next session. |  | [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills/productivity/handoff) |
 
 ## Add a skill (for the repo owner)
 
