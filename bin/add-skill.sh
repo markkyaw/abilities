@@ -5,8 +5,6 @@
 set -eu
 
 REPO=$(cd "$(dirname "$0")/.." && pwd)
-# The tests set this variable to clone from a local folder.
-BASE=${ABILITIES_GIT_BASE:-https://github.com}
 
 usage() {
   echo "Usage: bin/add-skill.sh <category> https://github.com/<owner>/<repo>/tree/<ref>/<path> [name]" >&2
@@ -45,7 +43,7 @@ tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
 
 git clone --quiet --depth 1 --filter=blob:none --sparse -b "$ref" \
-  "$BASE/$owner/$repo.git" "$tmp/src"
+  "https://github.com/$owner/$repo.git" "$tmp/src"
 git -C "$tmp/src" sparse-checkout set "$path"
 if [ ! -f "$tmp/src/$path/SKILL.md" ]; then
   echo "No SKILL.md in $owner/$repo at $path" >&2
